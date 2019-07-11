@@ -88,6 +88,7 @@ body {
     font-size: 3rem;
     color: #455955;
     border: none;
+    text-align: right;
 }
 
 .winner-score:focus {
