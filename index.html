@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="game-box">
+        <div class="flex-container-1">
+            <div class="output">The Ultimate Dice Game</div>
+            
+            <div class="headers-scores">
+                <h1>Player 1</h1>
+                <h1>Player 2</h1>
+            </div>
+            
+            <div class="flex-container-2">
+                <div class="player-1">
+                    &#9861
+                </div>
+                <div class="player-2">
+                    &#9861
+                </div>
+            </div>
+            
+            <div class="headers-scores">
+                <h1 id="player-1-score">Score: 0</h1>
+                <h1 id="player-2-score">Score: 0</h1>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="game-control">
+       
+        <input class="winner-score" type="number" name="winner-score" value="21" min="10" max="99">
+        
+    <div class="btn">
+        <button type="button" class="roll-player" id="roll-player-1">Roll Dice 1</button>
+        <button type="button" class="reset">Reset Game</button>
+        <button type="button" class="roll-player" id="roll-player-2">Roll Dice 2</button>
+    </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body></html>
