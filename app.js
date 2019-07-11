@@ -8,28 +8,21 @@ const reset_btn = document.querySelector('.reset');
 const player_1_ID = document.getElementById('roll-player-1');
 const player_2_ID = document.getElementById('roll-player-2');
 
-const dice_1 = document.querySelector('.player-1:first-child');
-const dice_2 = document.querySelector('.player-2:first-child');
-
 // Event listeners
-player_1_ID.addEventListener('click', rollDice);
-player_2_ID.addEventListener('click', rollDice);
-//reset_btn.addEventListener('click', resetGame);
+player_1_ID.onclick = rollDice;
+player_2_ID.onclick = rollDice;
 reset_btn.onclick = resetGame;
 winner_score.oninput = maxMinScores;
 
-// Functions
+// Onload
 let current_scores = [0, 0];
-player_1_ID.disabled = false;
 player_2_ID.disabled = true;
-player_1_ID.style.cursor = 'pointer';
 player_2_ID.style.cursor = 'not-allowed';
 
 // Roll the dice
 function rollDice(event) {
     let roll_array = [roll(6), roll(6)];
     winner_score.disabled = true;
-    console.log(roll_array)
     
     if(event.target.id === "roll-player-1") {
         current_scores[0] += Number(roll_array[0][0]);
@@ -90,5 +83,5 @@ function resetGame() {
     player_2_ID.disabled = true;
     player_1_ID.style.cursor = 'pointer';
     player_2_ID.style.cursor = 'not-allowed';
-    output.innerText = 'The Ultimate Dice Game';
+    output.innerText = 'The Ultimate Dice Game!';
 }
