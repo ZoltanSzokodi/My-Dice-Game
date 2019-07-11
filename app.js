@@ -1,12 +1,12 @@
-let output = document.querySelector('.output');
+const output = document.querySelector('.output');
 const player_1 = document.querySelector('.player-1');
 const player_2 = document.querySelector('.player-2');
 const player_1_score = document.querySelector('#player-1-score');
 const player_2_score = document.querySelector('#player-2-score');
-let winner_score = document.querySelector('.winner-score');
+const winner_score = document.querySelector('.winner-score');
 const reset_btn = document.querySelector('.reset');
-let player_1_ID = document.getElementById('roll-player-1');
-let player_2_ID = document.getElementById('roll-player-2');
+const player_1_ID = document.getElementById('roll-player-1');
+const player_2_ID = document.getElementById('roll-player-2');
 
 const dice_1 = document.querySelector('.player-1:first-child');
 const dice_2 = document.querySelector('.player-2:first-child');
